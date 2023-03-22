@@ -11,7 +11,7 @@ def test_read_main():
 
 def test_get_call_name_jonancy():
     name = "Jonancy"
-    url = "/callname/{name}"
+    url = "/callname/"+name
     expected_result = {"hello": name}
     response = client.get(url)
     assert response.status_code == 200
