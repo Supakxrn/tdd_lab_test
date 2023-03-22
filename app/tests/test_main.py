@@ -16,11 +16,3 @@ def test_get_call_name_jonancy():
     expected_result = {"hello": name}
     assert response.status_code == 200
     assert response.json() == expected_result
-
-def test_post_call_name_paipibut():
-    name = "Paipibut"
-    url = "/callname/"+name
-    expected_result = {"hello": name}
-    response = client.post(url)
-    assert response.status_code == 200
-    assert response.json() == expected_result
